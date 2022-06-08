@@ -1,8 +1,8 @@
 <template>
   <div class="shortcuts-box">
-    <a class="shortcut settings" href="javascript:void(0)" @click="showSettingsModal" title="Settings">
+    <router-link to="/settings" class="shortcut settings" title="Settings">
       <font-awesome-icon class="icon" icon="fa-solid fa-gear" />
-    </a>
+    </router-link>
     <a class="shortcut" v-for="(shortcut, index) in shortcuts" :key="index" :href="shortcut.url" :target="options.openInNewTab ? '_blank' : ''" :title="shortcut.name">
       <font-awesome-icon class="icon" :icon="shortcut.icon" />
     </a>
@@ -83,9 +83,6 @@ export default {
     }
   },
   methods: {
-    showSettingsModal() {
-      // TODO: Making a modal for the settings
-    },
     showAddModal() {
       Swal.fire({
         title: 'Add new shortcut',

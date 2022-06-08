@@ -27,7 +27,7 @@ export default new Vuex.Store({
       wallpaperOptions: {
         source: 'url',
         options: {
-          value: 'https://share.gaycookie.dev/zudO9/vOYobAwI80.jpg/raw'
+          value: 'https://share.gaycookie.dev/zudO9/vugehani07.jpg/raw'
         }
       },
       timeOptions: {
@@ -41,7 +41,13 @@ export default new Vuex.Store({
         apiKey: '',
       },
       shortcutsOptions: {
-        shortcuts: [ ],
+        shortcuts: [
+          {
+            name: 'Source Code',
+            icon: 'fa-brands fa-github',
+            url: 'https://github.com/gaycookie/Startpage'
+          }
+        ],
         openInNewTab: true,
       }
     }
