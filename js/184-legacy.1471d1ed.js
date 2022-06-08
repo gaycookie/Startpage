@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkstart_page"]=self["webpackChunkstart_page"]||[]).push([[184],{3184:function(e,l,t){t.r(l);var u,a,s=t(1001),n={},p=(0,s.Z)(n,u,a,!1,null,null,null);l["default"]=p.exports}}]);
+//# sourceMappingURL=184-legacy.1471d1ed.js.map
