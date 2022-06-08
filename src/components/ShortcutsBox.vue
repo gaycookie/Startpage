@@ -1,9 +1,12 @@
 <template>
   <div class="shortcuts-box">
+    <a class="shortcut settings" href="javascript:void(0)" @click="showSettingsModal" title="Settings">
+      <font-awesome-icon class="icon" icon="fa-solid fa-gear" />
+    </a>
     <a class="shortcut" v-for="(shortcut, index) in shortcuts" :key="index" :href="shortcut.url" :target="options.openInNewTab ? '_blank' : ''" :title="shortcut.name">
       <font-awesome-icon class="icon" :icon="shortcut.icon" />
     </a>
-    <a v-if="shortcuts.length < 19" class="shortcut" href="javascript:void(0)" @click="showAddModal" title="Add new shortcut">
+    <a v-if="shortcuts.length < 18" class="shortcut" href="javascript:void(0)" @click="showAddModal" title="Add new shortcut">
       <font-awesome-icon class="icon" icon="fa-solid fa-plus" />
     </a>
   </div>
@@ -80,6 +83,9 @@ export default {
     }
   },
   methods: {
+    showSettingsModal() {
+      // TODO: Making a modal for the settings
+    },
     showAddModal() {
       Swal.fire({
         title: 'Add new shortcut',
