@@ -1,18 +1,31 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <SearchBox style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" />
+    <ShortcutsBox style="position: absolute; left: 64px; bottom: 64px;" />
+    <TimeBox style="position: absolute; top: 64px; left: 64px;" />
   </div>
 </template>
 
+<style scoped>
+.home {
+  height: 100%;
+  background-color: aqua;
+}
+</style>
+
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import SearchBox from '@/components/SearchBox.vue'
+import ShortcutsBox from '@/components/ShortcutsBox.vue'
+import TimeBox from '@/components/TimeBox.vue'
+//import WeatherBox from '@/components/WeatherBox.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld
+    SearchBox,
+    ShortcutsBox,
+    TimeBox,
+    //WeatherBox
   }
 }
 </script>

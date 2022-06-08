@@ -1,0 +1,12 @@
+:root {
+  --background-color: #eeeeee;
+  --text-color: #222222;
+  --accent-color: #f53191;
+  --stroke-color: #eeeeee;
+}
+
+[data-theme="dark"] {
+  --background-color: #222222;
+  --text-color: #eeeeee;
+  --stroke-color: #222222;
+}
